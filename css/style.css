@@ -1,0 +1,127 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.counter {
+    background-color: #58af9b;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 50px;
+    min-width: 300px;
+    box-shadow: inset 0 0 2px;
+}
+
+.cupon-post .coupon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    width: 90%;
+    min-width: 300px;
+    box-shadow: 0 0 2px;
+}
+.promo-box {
+    width: 100px;
+    text-align: center;
+}
+.coupon-text {
+    flex: 1;
+    margin: 0 10px;
+}
+.coupon button {
+    width: 120px;
+    background-color: #58af9b;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+.coupon button:hover {
+    background-color: darkorange;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    
+}
+.home-busca {
+    border-color: black;
+    width: 100%;
+    background-color: #58af9b;
+    padding: 30px;
+    border-bottom: 1px solid black; /* Adiciona a linha preta na parte de baixo */
+    position: fixed; /* Deixa o elemento fixo */
+    top: 0; /* Posiciona o elemento no topo da página */
+    left: 0; /* Garante que o elemento fique alinhado à esquerda */
+    z-index: 1000; /* Garante que o elemento fique acima de outros conteúdos */
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: inset black 0 0 5px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+.copy-btn {
+    background-color: #58af9b;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.copy-btn:hover {
+    background-color: darkorange;
+}
+.promo {
+    color: #58af9b;
+    font-size: 20px;
+}
+.img{
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+   
