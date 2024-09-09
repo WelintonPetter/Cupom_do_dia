@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupons do dia</title>
+    <link rel="shortcut icon" href="icon/icon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="home-busca">
+
+   
+    <a href="index.html" target="_blank">
+        <span> </span>
+        <img src="img/logo.png" alt="Logo" class="logo">
+    </a>
+</div>
+
+<div class="img">
+    <img src="https://api.pelando.com.br/media/9470a0b2-6642-42fb-a744-5413cf80cd6c?v=3&t=eyJoZWlnaHQiOjEyMH0%3D" alt="Final">
+</div>
+
+<div class="cupon-post">
+    <div class="coupon">
+        <div class="promo-box">
+            <strong class="promo">R$ 10 OFF</strong><br>
+        </div>
+        <div class="coupon-text">
+            Desconto de R$10 off na sua Primeira Compra.
+        </div>
+        <button onclick="showCoupon('WEPERR1KB')">Pegar cupom</button>
+    </div>
+    <div class="coupon">
+        <div class="promo-box">
+            <strong class="promo">20%</strong><br>
+        </div>
+        <div class="coupon-text">
+            <p>  Compras mínimas de R$50,00..Máximo de 3 uso por usuário. 20% OFF limitado a R$15,00.</p>
+            <p>Válido até 23:59 de 30/09/2024 - Exclusico para cidades selecionadas - Limite de 8.000 usos.</p>          
+        </div>
+        <button onclick="showCoupon('DESCONTINHO20')">Pegar cupom</button>
+    </div>   
+    <div class="coupon">
+        <div class="promo-box">
+            <strong class="promo">30%</strong><br>
+        </div>
+        <div class="coupon-text">
+            <p>  Compras mínimas de R$50,00..Máximo de 2 uso por usuário. 30% OFF limitado a R$15,00.</p>
+            <p>Válido até 23:59 de 30/09/2024 - Exclusico para cidades selecionadas - Limite de 40.000 usos.</p>          
+        </div>
+        <button onclick="showCoupon('ZECHEGOU30')">Pegar cupom</button>
+    </div>   
+    
+</div>
+
+
+
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="couponCode">Código: </p>
+    <button class="copy-btn" onclick="copyCoupon()">Copiar Cupom</button>
+  </div>
+</div>
+
+
+<div class="counter">
+    <span id="promoCount"></span> Cupons
+</div>
+
+<script src="mek/scripts.js"></script>
+<script>
+    function showCoupon(code) {
+        // Copiar o código do cupom para a área de transferência
+        navigator.clipboard.writeText(code).then(function() {
+            //alert('Cupom copiado: ' + code);
+        }, function(err) {
+            console.error('Erro ao copiar o cupom: ', err);
+        });
+
+        // Redirecionar para o site
+        var siteUrl = "https://www.ze.delivery/";
+        window.open(siteUrl, '_blank');
+    }   
+</script>
+
+
+
+</body>
+</html>

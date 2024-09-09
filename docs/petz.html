@@ -19,38 +19,26 @@
 </div>
 
 <div class="img">
-    <img src="https://api.pelando.com.br/media/9fb6cfb7-0aeb-4b10-894f-1d3fad8678e5?v=3&t=eyJoZWlnaHQiOjEyMH0%3D" alt="Final">
+    <img src="https://api.pelando.com.br/media/e4434c29-0c3e-47c7-a83f-0b41648ec262?v=3&t=eyJoZWlnaHQiOjIzOH0%3D" alt="Final">
 </div>
 
 <div class="cupon-post">
     <div class="coupon">
         <div class="promo-box">
-            <strong class="promo">R$300 OFF</strong><br>
+            <strong class="promo"> 10 %</strong><br>
         </div>
         <div class="coupon-text">
-            R$300 para novos usuários do app TEMU
+            Aproveite 10% de desconto em toda a loja, incluindo as unidades físicas!
         </div>
-        <button onclick="window.open('https://temu.to/m/uydqehpcmaf', '_blank')">Pegar Promoção</button>
-    </div>    
-    <div class="coupon">
-        <div class="promo-box">
-            <strong class="promo">Receba R$10</strong><br>
-        </div>
-        <div class="coupon-text">
-            Seja um afiliado TEMU  
-        </div>
-        <button onclick="window.open('https://temu.to/m/u6mlkn95vy2', '_blank')">Seja Afiliado</button>
-    </div>  
-    <div class="coupon">
-        <div class="promo-box">
-            <strong class="promo">30% OFF</strong><br>
-        </div>
-        <div class="coupon-text">
-            Em pedidos acima de R$100, com limite de R$120
-        </div>
-        <button onclick="showCoupon('acu554017')">Pegar cupom</button>
+        <button onclick="showCoupon('ADOTEPET')">Pegar cupom</button>
     </div>
+   
 </div>
+
+
+
+
+
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -61,10 +49,28 @@
   </div>
 </div>
 
+
 <div class="counter">
     <span id="promoCount"></span> Cupons
 </div>
 
 <script src="mek/scripts.js"></script>
+<script>
+    function showCoupon(code) {
+        // Copiar o código do cupom para a área de transferência
+        navigator.clipboard.writeText(code).then(function() {
+            //alert('Cupom copiado: ' + code);
+        }, function(err) {
+            console.error('Erro ao copiar o cupom: ', err);
+        });
+
+        // Redirecionar para o site
+        var siteUrl = "https://www.petz.com.br/parceiro/Adotepet";
+        window.open(siteUrl, '_blank');
+    }   
+</script>
+
+
+
 </body>
 </html>

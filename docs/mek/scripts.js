@@ -1,9 +1,4 @@
-function showCoupon(code) {
-    var modal = document.getElementById("myModal");
-    var couponCodeText = document.getElementById("couponCode");
-    couponCodeText.textContent = "Código: " + code;
-    modal.style.display = "block";
-}
+
 
 function copyCoupon() {
     var couponCodeText = document.getElementById("couponCode").textContent.split(": ")[1];
